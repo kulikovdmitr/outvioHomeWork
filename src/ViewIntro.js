@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button } from "@material-ui/core";
 
 function ViewIntro({ onOrder }) {
   return (
-    <Button variant="contained" color="primary" onClick={onOrder}>
+    <Button variant="contained" color="primary" data-marker="entry-btn" onClick={onOrder}>
       Order your 🍕
     </Button>
   );

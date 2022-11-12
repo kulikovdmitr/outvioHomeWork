@@ -8,6 +8,7 @@ function AddPizza({ onAdd, disabled }) {
       onClick={onAdd}
       variant="contained"
       color="secondary"
+      data-marker="add-pizza-btn"
       disabled={disabled}
     >
       Add pizza

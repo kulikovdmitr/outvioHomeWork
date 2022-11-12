@@ -45,11 +45,11 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
     <Paper classes={{ root: classes.paperRoot }} elevation={3}>
       {!disabled && (
         <div className={classes.removeHolder}>
-          <FontAwesomeIcon icon={faTrash} onClick={onRemove} />
+          <FontAwesomeIcon icon={faTrash} onClick={onRemove} data-marker={"remove-btn" + (index + 1)}/>
         </div>
       )}
 
-      <Typography>Pizza #{index + 1}</Typography>
+      <Typography>Pizza #{index + 1} </Typography>
 
       <BoxHolderRow>
         <Box
@@ -59,6 +59,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
             }
           }}
           active={data.size === "small"}
+          markerId = {"smallPizza-size-btn-" + (index + 1)}
         >
           <FontAwesomeIcon icon={faPizzaSlice} style={{ fontSize: "14px" }} />
           <span>small</span>
@@ -70,6 +71,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
             }
           }}
           active={data.size === "medium"}
+          markerId = {"mediumPizza-size-btn-" + (index + 1)}
         >
           <FontAwesomeIcon icon={faPizzaSlice} onClick={onRemove} />
           <span>medium</span>
@@ -81,6 +83,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
             }
           }}
           active={data.size === "large"}
+          markerId = {"largePizza-size-btn-" + (index + 1)}
         >
           <FontAwesomeIcon icon={faPizzaSlice} style={{ fontSize: "24px" }} />
           <span>large</span>
@@ -95,6 +98,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
             }
           }}
           active={data.toppings.includes("cheese")}
+          markerId = {"cheese-btn-" + (index + 1)}
         >
           <FontAwesomeIcon icon={faCheese} style={{ fontSize: "24px" }} />
           <span>cheese</span>
@@ -106,6 +110,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
             }
           }}
           active={data.toppings.includes("bacon")}
+          markerId = {"bacon-btn-" + (index + 1)}
         >
           <FontAwesomeIcon icon={faBacon} style={{ fontSize: "24px" }} />
           <span>bacon</span>
@@ -117,6 +122,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
             }
           }}
           active={data.toppings.includes("egg")}
+          markerId = {"egg-btn-" + (index + 1)}
         >
           <FontAwesomeIcon icon={faEgg} style={{ fontSize: "24px" }} />
           <span>egg</span>
