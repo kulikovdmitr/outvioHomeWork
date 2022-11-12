@@ -1,3 +1,4 @@
+import React from 'react';
 import { makeStyles, Paper, Typography } from "@material-ui/core";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
