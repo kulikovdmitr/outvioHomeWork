@@ -1,4 +1,3 @@
-
 version: '3.2'
 
 # run web application and open Cypress Test Runner in a Docker container
