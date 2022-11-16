@@ -97,7 +97,7 @@ function ViewAssembly({ onOrdered }) {
     pizzas.some((pizza) => pizza.size === "" || pizza.toppings.length === 0);
 
   return (
-    <Paper elevation={3} classes={{ root: classes.paperRoot }} data-marker="header-lbl">
+    <Paper elevation={3} classes={{ root: classes.paperRoot }} marker="header-lbl">
       <Typography variant="h5" component="h1" gutterBottom>
         Assemble your pizza(s)
       </Typography>
@@ -119,7 +119,7 @@ function ViewAssembly({ onOrdered }) {
       />
 
       {error !== null && (
-        <p style={{ color: "#DC2626", marginTop: "24px" }} data-marker="error-message-lbl">{error}</p>
+        <p style={{ color: "#DC2626", marginTop: "24px" }} marker="error-message-lbl">{error}</p>
       )}
 
       <Button
@@ -129,7 +129,7 @@ function ViewAssembly({ onOrdered }) {
         disabled={isSubmitDisabled || isLoading}
         onClick={handleSubmit}
         style={{ marginTop: "24px" }}
-        data-marker="submit-btn"
+        marker="submit-btn"
       >
         submit order
       </Button>

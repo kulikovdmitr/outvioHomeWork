@@ -32,7 +32,7 @@ function Box({ active = false, onClick, children, markerId }) {
       classes={{ root: classes.paperRoot }}
       elevation={active ? 4 : 0}
       onClick={onClick}
-      data-marker={markerId}
+      marker={markerId}
     >
       {children}
     </Paper>

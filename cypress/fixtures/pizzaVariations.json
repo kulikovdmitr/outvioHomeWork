@@ -1,0 +1,16 @@
+[
+  {
+    "pizzaLocator": "[marker=\"smallPizza-size-btn-1\"]",
+    "fillingLocator": "[marker=\"cheese-btn-1\"]"
+  },
+
+  {
+    "pizzaLocator": "[marker=\"mediumPizza-size-btn-1\"]",
+    "fillingLocator": "[marker=\"bacon-btn-1\"]"
+  },
+
+  {
+    "pizzaLocator": "[marker=\"largePizza-size-btn-1\"]",
+    "fillingLocator": "[marker=\"egg-btn-1\"]"
+  }
+]

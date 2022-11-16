@@ -27,3 +27,8 @@ You can rely on your own experience as to what types of tests are added, but her
 
 - You need to return all project files with the added tests.
 - In case you find a bug(s) feel free to create a report.
+
+# Run tests 
+
+Run with test-host (e2e-tests) & api-host (api-tests) `cypress run --env host=http://localhost:3000`
+

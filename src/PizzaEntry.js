@@ -45,7 +45,7 @@ function PizzaEntry({ data, index, onRemove, onUpdate, disabled }) {
     <Paper classes={{ root: classes.paperRoot }} elevation={3}>
       {!disabled && (
         <div className={classes.removeHolder}>
-          <FontAwesomeIcon icon={faTrash} onClick={onRemove} data-marker={"remove-btn-" + (index + 1)}/>
+          <FontAwesomeIcon icon={faTrash} onClick={onRemove} marker={"remove-btn-" + (index + 1)}/>
         </div>
       )}
 
