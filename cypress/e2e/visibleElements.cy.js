@@ -1,11 +1,6 @@
 import CommonLocators from "../support/PageObject/CommonLocators"
 
 describe('example to-do app', () => {
-  beforeEach(() => {
-
-    //cy.exec('yarn start && yarn run start-server')
-  })
-
   it('check displays button "Order your 🍕" ', () => {
     const commonLocators = new CommonLocators();
     //Act

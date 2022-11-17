@@ -1,6 +1,6 @@
 import {getTestApiHost} from "../../support/configuration";
 
-describe(' api testing', () => {
+describe('Api tests', () => {
 
     it('GET /api/order', () => {
         cy.request(getTestApiHost() + '/api/order').as('todoRequest');

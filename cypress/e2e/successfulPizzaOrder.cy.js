@@ -1,13 +1,8 @@
 import CommonLocators from "../support/PageObject/CommonLocators"
-import configuration from "../support/configuration";
 
 const testData = require('../fixtures/pizzaVariations.json');
 
 describe('example to-do app', () => {
-    beforeEach(() => {
-        //cy.exec('yarn start && yarn run start-server')
-    })
-
     testData.forEach((testData) => {
         it('Success pizza orders', () => {
             const commonLocators = new CommonLocators();

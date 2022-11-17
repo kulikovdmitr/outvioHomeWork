@@ -46,5 +46,5 @@ You can rely on your own experience as to what types of tests are added, but her
 
 # Run tests 
 
-Run with test-host (e2e-tests) & api-host (api-tests) `cypress run --env host=http://localhost:3000`
+Run with test-host (e2e-tests) & api-host (api-tests) `cypress run --env host=http://localhost:3000 api-host=http://localhost:3001`
 
