@@ -9,12 +9,12 @@
 // ***********************************************
 //
 //
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+//-- This is a parent command --
+//Cypress.Commands.add('login123', (email, password) => { ... })
 //
 //
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
+//-- This is a child command --
+//Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 //
 //
 // -- This is a dual command --
@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import {getTestApiHost} from "./configuration";
+
+Cypress.Commands.add("getOrderId", () => {
+
+    return cy.request({
+        url: getTestApiHost() + '/api/order',
+        method: 'GET',
+    })
+})
