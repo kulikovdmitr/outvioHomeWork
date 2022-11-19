@@ -23,13 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-import {getTestApiHost} from "./configuration";
-
-Cypress.Commands.add("getOrderId", () => {
-
-    return cy.request({
-        url: getTestApiHost() + '/api/order',
-        method: 'GET',
-    })
-})
